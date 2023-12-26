@@ -1,0 +1,15 @@
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\bin\Debug\FoodOrder.exe.config
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\bin\Debug\FoodOrder.exe
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\bin\Debug\FoodOrder.pdb
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\bin\Debug\Guna.UI2.dll
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\obj\Debug\FoodOrder.csproj.AssemblyReference.cache
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\obj\Debug\FoodOrder.csproj.SuggestedBindingRedirects.cache
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\obj\Debug\FoodOrder.Form1.resources
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\obj\Debug\FoodOrder.Properties.Resources.resources
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\obj\Debug\FoodOrder.csproj.GenerateResource.cache
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\obj\Debug\FoodOrder.csproj.CoreCompileInputs.cache
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\obj\Debug\FoodOrder.csproj.CopyComplete
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\obj\Debug\FoodOrder.exe
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\obj\Debug\FoodOrder.pdb
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\obj\Debug\FoodOrder.Food.resources
+D:\TDMU\Phân tích thiết kế hướng đối tượng\Đồ án cuối kỳ\FoodOrder\FoodOrder\obj\Debug\FoodOrder.Order.resources
