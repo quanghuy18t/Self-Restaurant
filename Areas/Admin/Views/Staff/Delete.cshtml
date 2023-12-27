@@ -1,0 +1,80 @@
+﻿@model Manage.Models.USER
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<style type="text/css">
+    h3, h4 {
+        color: red;
+        font-weight: bold;
+    }
+</style>
+
+<h2>XÁC NHẬN THÔNG TIN CẦN XÓA</h2>
+<h3>Bạn chắc chắn xóa nhân viên này?</h3>
+<h4>@Html.Raw(ViewBag.ThongBao)</h4>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BRANCH.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BRANCH.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ROLE.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ROLE.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.userName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.passWord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.passWord)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-primary" /> |
+            @Html.ActionLink("VỀ TRANG QUẢN LÝ", "Index")
+        </div>
+    }
+</div>

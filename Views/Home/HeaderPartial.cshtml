@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Manage.Models.BRANCH>
+
+<style>
+    .nice-select {
+        padding-top: 0px;
+        width: 300px;
+    }
+</style>
+
+<header class="header_section">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+                <span>
+                    Feane
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mx-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                </ul>
+                <div class="user_option">
+                    <select class="form-control nice-select" id="idBranch" name="idBranch" aria-label="label for the select">
+                        @foreach (var item in Model)
+                        {
+                            if (ViewBag.state == item.idBranch)
+                            {
+                                <option value="@item.idBranch" style="padding-top:0px">@item.address</option>
+                            }
+                            <option value="@item.idBranch" style="padding-top:0px">@item.address</option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+@*<script>
+        document.getElementById("idBranch").addEventListener("change", function () {
+            console.log("sdasdsad");
+            var idBranch = this.value;
+            window.location.href = '@Url.Action("Index", "Home")?idBranch=' + idBranch;
+        })
+    </script>*@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#idBranch').on('change', function () {
+            console.log('Change event fired!');
+            var idBranch = $(this).val();
+            window.location.href = '@Url.Action("Index", "Home")?idBranch=' + idBranch;
+        });
+    });
+</script>

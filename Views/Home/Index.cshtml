@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<section class="food_section layout_padding-bottom">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h2>
+                Our Menu
+            </h2>
+        </div>
+
+        <div class="filters-content">
+            <div class="row grid">
+                @foreach (var item in Model)
+                {
+                    <div class="col-sm-6 col-lg-4 all">
+                        <div class="box">
+                            <div>
+                                <div class="img-box">
+                                    <img src="~/Content/images/products/@item.image" alt="@item.name">
+                                </div>
+                                <div class="detail-box" style="justify-content:center;text-align:center">
+                                    <h5>
+                                        @item.name
+                                    </h5>
+                                    <div class="options" style="justify-content:center;text-align:center">
+                                        <h6>
+                                            @Html.FormatValue(item.price, "{0:#,##0 VNĐ}")
+                                        </h6>
+                                           
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+

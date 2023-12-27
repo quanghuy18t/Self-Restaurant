@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Manage.Models.USER>
+@{
+    ViewBag.Title = "Quản lý nhân viên";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>QUẢN LÝ NHÂN VIÊN</h2>
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">@Html.ActionLink("Thêm mới", "Create")</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead style="text-align:center">
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.name)</th>
+                        <th>@Html.DisplayNameFor(model => model.phone)</th>
+                        <th>@Html.DisplayNameFor(model => model.idRole) </th>
+                        <th>@Html.DisplayNameFor(model => model.idBranch)</th>
+                        <th>@Html.DisplayNameFor(model => model.userName)</th>
+                        <th>@Html.DisplayNameFor(model => model.passWord)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody style="text-align:center">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.phone)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ROLE.name)
+                            </td>
+                            @if (item.BRANCH == null)
+                            {
+                                <td></td>
+                            } else
+                            {
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.BRANCH.address)
+                                </td>
+                            }          
+                            <td>
+                                @Html.DisplayFor(modelItem => item.userName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.passWord)
+                            </td>
+                            <td width="200px">
+                                <a href="@Url.Action("Edit", new { id = item.idUser })" class="btn btn-warning" role="button">Sửa</a>
+                                <a href="@Url.Action("Detail", new { id = item.idUser })" class="btn btn-primary" role="button">Chi tiết</a>
+                                <a href="@Url.Action("Delete", new { id = item.idUser })" class="btn btn-danger" role="button">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

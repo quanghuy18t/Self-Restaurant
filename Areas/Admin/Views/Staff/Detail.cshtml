@@ -1,0 +1,66 @@
+﻿@model Manage.Models.USER
+
+@{
+    ViewBag.Title = "Chi tiết";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Chi tiết nhân viên</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BRANCH.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BRANCH.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ROLE.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ROLE.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.userName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.passWord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.passWord)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { id = Model.idUser }) |
+    @Html.ActionLink("VỀ TRANG QUẢN LÝ", "Index")
+</p>
